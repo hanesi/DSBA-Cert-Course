@@ -1,0 +1,62 @@
+MLS - 3 Notes
+
+Mode can't be applied on continuous data, but discrete values, yes
+
+Descriptive stats help with summarization, graphs/charts/tables
+Inferential stats - extract predictions about a population from a sample
+
+Continuous stats - height, can have any possible value (decimals)
+Discrete - family size, can't have 2.5 family members (integers)
+
+Qualitative data  - Nominal (male/female) or Ordinal (happy, sad)
+Quantitative - Discrete/Continuous (see above)
+
+Population - universe of possible data for an object
+Parameter - numerical value associated with a Population
+Sample - selection of observations from population
+Statistic - numerical value from a Sample
+
+ex:
+Population - all target customers
+Sample - Random group of 200 who visited the store during the blind test
+Parameter - acceptance rate of the product
+Statistic - acceptance rate of the product from the random 200 people
+
+Dispersion - how large the spread of distribution is
+Range - difference between max and min value
+Interquartile Range - Measure of variability, divide data into quartiles, Q1 - Q3
+
+Variance - How far each value varies from the mean
+Standard Deviation - How spread out the numbers are
+
+Covariance - measure of association between two values
+  association in units of the two vars
+Correlation - Is the same, but dimensionless, can compare beyond units
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;
