@@ -1,0 +1,185 @@
+Probability and Distributions
+
+Going to look at mathematical distributions of data
+
+Next Video
+
+Probability refers to likelihood of an event taking place
+event is an outcome
+experiment is a process performed to understand outcomes
+set of outcomes is called a sample space
+
+Sample space consists of events, it's where we do experiments
+
+probability refers to outcomes and events
+
+three parts from a manufacturing unit are selected, determine if defective or not
+determine:
+sample space
+event of getting at least 2 defective parts
+
+Let S be sample space { GGG, GGD, GDG, DGG, GDD, DGD, DDG, DDD}
+Let E denote event of at least 2 defectives {GDD, DGD, DDG, DDD}
+and use E
+
+Probability = m/n (number of ways it could happen/total number of outcomes)
+probability is always >= 0 and =< 1
+
+1 == it will happen 0 == it wont
+
+Mutual Exclusivity - two events with nothing in common between them
+  if one happens, the other wont. If you pick a card from a deck, it is a king or queen
+  not both
+
+Independent events - A and B events are not influenced by each other
+  ME events are not independent. If you know one event happened, you know other did not
+  i.e. drew a king so know you didnt draw a queen
+
+Next Video
+
+Can add probabilities if they are ME (A union B)
+  A or B or both = A+B
+
+If there is a commonality between events, it's A + B - A intersection B
+
+if ME, intersection of A and B is 0 (cannot both happen)
+
+Well shuffled cards, picked at random
+Probability of King or Queen?
+  8/52 (Chance of king plus chance of Queen)
+Probability of King or Diamond?
+  4/52 + 13/52 - 1/52 = 16/52
+  (chance of king plus chance of diamond minus chance of diamond king)
+
+Independent events - Multiplication rule
+Chance of A and B equals chance of A x B
+  (if 50/50, chance of both is 25%)
+
+Chance of getting an A in Math and Marketing, multiply both probabilities
+
+When not independent, chance of A and B is the chance of A and then B given A
+
+2 cards drawn in succession, probability of drawing back to back spades?
+13/52 x 12/51 = 156/2652 = 1/17
+
+Next Video
+
+Marginal probability
+
+200 families surveyed, relating income to propensity to buy car
+  arrage data as a table (contingency table)
+  divide into 4 segments, income above or below 20k, buyer or not buyer
+
+  |Family|income above|income below|total|
+  ----------------------------------------
+  |buyer |38          |42          |80   |
+  |not   |82          |38          |120  |
+  |Total |120         |80          |200  |
+
+  Probability a selected family buys is 80/200 40%, marginal probability (refers to a total count)
+  Both buying and above income? refers to 42 people, 42/200 .21% (joint probability, refers to interior count)
+  Random family of income above, what are the odds they buy a car?
+    42/80 52.5%, conditional probability (42 above bought, 80 total bought)
+
+
+Next Video
+
+Bayes' Theorem
+
+Extension of conditional Probability
+
+there is a hypothesis (patient may have disease) to validate, evidence is gathered
+  evaluate hypothesis given evidence
+
+  Big deal in ML
+
+P(H|E) = P(E|H)/(P(E)) * P(H)
+
+Example - Spam filtering
+
+Email identified as spam, individual may not want this message. How to identify it?
+
+Consider words in it.
+
+Pr(spam|words) = (PR(words|spam) * Pr(spam)) / Pr(words)
+
+given a word, what's the likelihood that it's spam? can then set a threshold as you see fit
+
+Next Video
+
+Distribution - collection of probabilities
+  come in various size/shape/color
+
+Binomial dist - distribution of counts (tossing coins, how many heads/tails)
+  used for a discrete random variable
+
+Bernoulli Process - independently random trials, like flipping coins
+  probability of success is the same, outcomes don't influence each other
+
+  Basically n!/(x!(n-x)!) where x = number of success in n trials
+
+Bank looking at accounts, 60% chance they pay bills on time
+Whats the chance 2 accounts pay on time in a set of 7?
+
+(7/2) (6^2)(5^2)
+
+Has a mean, np
+StDev = sqrt(np(1-p))
+
+Next Video
+
+Poisson Distribution
+Plays a role in quality control, i.e. number of cars through checkpoint per hour
+  or number of corrupted pixels in an image
+
+  Hard to give a boolean outcome, applies to counts only really
+
+P(x) = (e^-lambda * lambda^x) / x!
+  lambda is average number of counts expected to see
+
+understand mailicious attacks on computer, average successes = 3, see 1 attack per day
+
+e^-3 * 3^1 / 11
+
+If 6 customers show up every 2 minutes to a bank, what is the chance 4 show up in
+  one minute?
+
+  lambda = 3 per min
+  x = 4 customers
+  e^-3 * 3^4 / 4!
+
+Next Video
+
+Normal Distribution
+Continuous values, bell curve, etc
+
+StDev is a spread +/- 1 StDev contains 68% of the data
+In data terms, if it's normally distributed, 2/3 of it fall 1 StDev from the mean
+
++/- 2 contains 95%, +/- 3 contains 99.7%
+
+never goes to 0, bell shaped, centered around mean, has mean and StDev
+
+z score = take value, subtract mean, divide by StDev
+
+what is distribution of cereal. mean of 0.295 kg, 0.025kg stdev
+
+less than .280kg? P(x < .0280) = P (x - .295) / 0.025 -> -0.6
+
+Last Video
+
+Python notebook
+
+
+
+
+
+
+
+
+
+
+
+
+
+;
