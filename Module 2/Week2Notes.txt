@@ -185,24 +185,85 @@ if not use t dist
 
 2 tests, compressive strength of concrete after 2 and 7 days
 
+Test of proportion
+
+30% of bottles are underfilled
+5 years later 24% still are, did it work?
+
+76/30 < .3
+
+Ho:po = .0
+Ha:po  < 0.3
+
+get zo, compare to normal dist
+
+155 banks, 35% have more than $10 billion in assets
+took sample of 50, 15% of those do
+
+p hat = 15/50, po = .35
+
+15/50 - .35 / sqrt(.36*.61/15)
+
+z < -1.65
+
+A Company sells computers and computer parts. The company claims that at
+least 90% of all orders are mailed within 72 hours after they are received.
+The quality control department at the company often takes samples to
+check if this claim is valid. A recently taken sample of 150 orders
+showed that 129 of them were mailed within 72 hours. Calculate the test
+statistic and conclude whether the company’s claim is true? Use a 2.5%
+significance level(Z value = -1.96)
+Null Hypothesis - H0: p0 >= 0.90
+Alternate Hypothesis - Ha : p0 < 0.90
+
+Let p be the proportion of all orders that are mailed by the company
+within 72 hours, and let be the corresponding sample proportion.
+n =150, pˆ = 129/150 = .86
+
+The company claims that at least 90% of all orders are mailed within 72 hours.
+p0= 0.9
+
+Z0 = pˆ - p0 / √ (p0(1-p0) / n)
+Z0 = 0.86 -0.9 / √(0.9(0.1) / 150 ) = -1.63
+
+z  = -1.63 is greater than the critical value of z = -1.96, and it falls
+in the non-rejection region
+
+Variance tests
+
+5 bottles have the quantities:
+607, 602, 590, 603, 598
+
+compare to another bottling plant too
+
+use chi squared
+applies to sample variance, not normal dist, needs to look at their crit values
+to do it
+
+area under curve is always 1
+
+chi2 = (n-1)*s^2/sigma^2
+
+should be around n-1 on average
+
+F - ratio test of Variance
+
+look at ratio of two variances F = sx^2/sy^2
+
+degrees of freedom are n - 1
+
+stock A has sample variance of 6.52, stock b 3.47 alph = 0.01
+
+larger variance on top, compare against table with degrees of freedom
+shapiro test - is it normal dist?
 
 
+ANOVA
 
+analyssi of variance
+test for equality of means
+Ho = all population means are equal
+H1 = not all means are equal
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-;
+One way - assumes variances all the same, are they lying on top of each other?
+  or are they moved around?
