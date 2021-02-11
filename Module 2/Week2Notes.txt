@@ -1,0 +1,208 @@
+Hypothesis testing
+
+Concepts of sampling distributions
+
+analyze data to make inferences about large subset of data
+sample stat vs population parameter
+sampling distribution is the dist of a stat that can be drawn from a population
+
+CLT - central limit theorem
+allows us to assume data from pop when large enough follows a pattern
+
+have a pop with mean and stdev (mu, rho)
+want to see if sampling dist follows normal dist and if it has a mu and rho
+  standard mean has an error, what is it?
+    the error present because it came from a sample
+
+sample has mean mu and stdev rho over sqrt(n) -> c/a
+as pop gets bigger, stdev drops
+
+if pop is normal, smaller samples will be
+if not, you can still make this calculation but now have a z transformation
+z = stdev - rho / c/a
+if population is huge, this is approximately normal
+
+sample mean is approx normal, applies to discrete and continuous dists
+number of kids isnt a fraction, but a dist is
+must be random sample, independent, sample should be no more than 10% pop
+  sample size of 30 is considered enough z is about nromal if n > 30
+
+make normality assumption when convenient
+
+
+Hypothesis
+
+assumption made independent of data
+null Hypothesis - status quo, reject leads to desired conclusion
+alternate Hypothesis - what someone wants to be true
+
+Hypothesis formulation
+
+coke promises 600ml in a bottle of coke, is it tho?
+need sufficient evidence, without it, we assume null hypothesis
+
+generate a sample
+calculate mean
+test the status quo, is mean == 600ml?
+if you can prove that it's not theres a problem
+what status quo am i testing? or am i testing an assumption i dont know yet?
+equality sign goes with null hypothesis
+
+conclusions we draw are made with respect to the null Hypothesis
+either reject or not. its boolean
+
+if we fail to reject, doesn't mean null hypothesis is true, just means it
+  wasnt disproven
+
+Type 1 and Type 2 errors
+
+reject null when false - correct
+fail to reject when its right - correct
+reject null when true - Type 1 Error (alpha)
+fail to reject when false - Type 2 error (beta)
+
+confidence level = 1 - alpha
+want to be 95% confident
+
+power of the test = 1 - beta
+
+maximize power of test for fixed alpha, this makes good hypothesis tests
+
+Hypothesis testing roadmap
+
+categorical data - take samples (1 or 2 proportion test)
+continuous data - population known or unknown test (z test/T test)
+
+Steps in testing
+
+develop a clear problem
+establish null and alt Hypothesis
+determine confidence level
+state decision when to reject or accept
+gather data
+calculate stats
+state conclusion based on p value
+make inference
+
+if P is low, Null will go!
+
+type of hypothesis tests
+
+single sample, multiple, one or two tailed, mean, variance, proportions, etc
+
+One tailed or two tailed
+mean vol isnt equal to 600ml
+  prove that something is not equal to 600
+  Ha is that avg is not 600
+  Ho is that it is 600
+  This makes it two tailed
+
+mean vol is more than 600
+  Ha is more than 600
+  Ho is less or equal to 600
+  Makes it one tailed
+
+purpose is to get a stat, say is it too large or small
+
+say we will reject if avg is not 600, but we wont get exactly 600. what do we accept?
+
+two tailed means there is a too large and too small.
+test tells us cutoffs, but its not convenient
+  measure the average so it becomes standardized
+  measure xbar - 600
+  What makes it large? let the data speak with a standard error
+    standard error is c/a
+
+define parameter
+define stat
+normalize stat
+invoke CLT
+
+One tailed is the same, but we are only looking at one direction.
+something will only be more than 600ml
+
+Confidence Interval
+
+can i put +/- around mean and say these are the good ones
+What values are supported by the data?
+
+if sample mean is in the white, reject null hyopthesis
+95% confidence statement says 95% of data is in it
+
+paper
+mean length = 11 inches
+stdev = 0.02 inches
+100 pieces drawn at random
+
+10.998 +/- 1.96 * 0.02/sqrt(100) for 95%
+
+A random sample of 100 men is taken and their mean height is found to be 180 cm.
+The population variance is 36 cm2. Find the 95% confidence interval
+(Z alpha/2 = 1.96) for the mean height of the population(μ).
+
+Sample mean  = 180 cm
+Sample size (n)  = 100
+Standard deviation = sqrt(variance) = sqrt(36) = 6
+The standard error (σ/ sqrt(n))  = 6 / sqrt(100) =  0.6.
+
+Lower limit: 180  - 1.96 * 0.6  = 178.824
+Upper limit: 180 + 1.96 * 0.6 = 181.176
+So 95% for μ is given by 178.824, 181.176
+
+Single sample z test of mean (known as rho)
+
+has waiting time changed from 4.5 mins
+stdev is 1.2
+sample mean is 5.1
+25 sampled
+
+is it stat sig?
+
+use one sided test, is it more or not?
+
+z = 5.1 - 4.5 / 1.2/sqrt25 = 2.5
+
+5.1 minutes is 2.5 StDevs above 4.5
+
+larger than 2.36, reject null Ha mu > 4.5
+
+one tail or two tail, determine null and Ha,
+determine Z
+compare to normal curve
+reject Null or not
+
+Test of mean
+
+replace sigma with s, sample StDev
+cant use normal dist anymore tho
+look at t statistic/distribution
+similar to normal but a little more spread out
+if sample becomes large, s becomes approximately sigma, use normal dist
+
+testing two samples, do they represent 2 different populations?
+if rho is known use z dist
+if not use t dist
+
+2 tests, compressive strength of concrete after 2 and 7 days
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;
